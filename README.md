@@ -1,2 +1,0 @@
-# YongleDuanmu.github.io
-resume
