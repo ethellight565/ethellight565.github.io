@@ -1,11 +1,365 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yongle Duanmu</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      line-height: 1.65;
+      color: #222;
+      background-color: #fff;
+    }
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .header {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin-bottom: 35px;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      background-color: #eee;
+      border: 1px solid #ddd;
+    }
+
+    .intro {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin: 0 0 8px 0;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 23px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      font-weight: 500;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+      font-size: 18px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    .contact {
+      margin-top: 12px;
+      font-size: 15px;
+    }
+
+    .news ul,
+    .awards ul,
+    .skills ul {
+      padding-left: 22px;
+    }
+
+    .publication,
+    .experience,
+    .project,
+    .education {
+      margin-bottom: 18px;
+    }
+
+    .pub-title {
+      font-weight: bold;
+    }
+
+    .author {
+      color: #444;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 7px;
+      margin-left: 5px;
+      font-size: 12px;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+      color: #555;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #9b1c1c;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding-top: 18px;
+      border-top: 1px solid #ddd;
+      color: #777;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .header {
+        flex-direction: column;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-img {
+        width: 160px;
+        height: 200px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Yongle Duanmu</h1>
-  <p>Hello, this is my personal homepage.</p>
+
+  <div class="header">
+    <img class="profile-img" src="images/profile.jpg" alt="Yongle Duanmu">
+
+    <div class="intro">
+      <h1>Yongle Duanmu</h1>
+      <div class="subtitle">端木永乐</div>
+      <p>
+        I am currently a master's student in Control Science and Engineering at
+        <strong>Dalian University of Technology</strong>. Before that, I received my B.Eng.
+        degree in Automation from <strong>Henan Polytechnic University</strong>, where I ranked
+        first in my major for four consecutive years.
+      </p>
+
+      <p>
+        My research interests include <strong>ECG-based emotion recognition</strong>,
+        <strong>multimodal learning</strong>, <strong>domain adaptation</strong>,
+        <strong>embedded AI</strong>, <strong>edge computing</strong>, and
+        <strong>intelligent healthcare</strong>.
+      </p>
+
+      <div class="contact">
+        Email: <a href="mailto:HPU_DMYL@163.com">HPU_DMYL@163.com</a> &nbsp;/&nbsp;
+        GitHub: <a href="https://github.com/YongleDuanmu" target="_blank">YongleDuanmu</a>
+        &nbsp;/&nbsp;
+        CV: Coming soon
+      </div>
+    </div>
+  </div>
+
+  <h2>Biography</h2>
+  <p>
+    I am interested in building intelligent systems that combine machine learning algorithms
+    with real-world embedded platforms. My current research focuses on ECG-based affective
+    computing, multimodal representation learning, cross-subject domain adaptation, and
+    edge-AI-enabled healthcare systems. I also have engineering experience in embedded
+    software development, sensor integration, PCB design, real-time operating systems, and
+    multimodal human-computer interaction.
+  </p>
+
+  <h2>News</h2>
+  <div class="news">
+    <ul>
+      <li><strong>2026.09</strong>: I will join the Xiaomi OpenVela team as an embedded software development intern.</li>
+      <li><strong>2026.05</strong>: I started an embedded software development internship on battery thermal runaway monitoring.</li>
+      <li><strong>2026</strong>: One first-author paper was submitted to <em>Biomedical Signal Processing and Control</em>.</li>
+      <li><strong>2026</strong>: One co-first-author paper was submitted to <em>Sensors and Actuators B: Chemical</em>.</li>
+      <li><strong>2026</strong>: Our paper received the Best Paper Award at ETAI 2026.</li>
+    </ul>
+  </div>
+
+  <h2>Selected Publications</h2>
+
+  <div class="publication">
+    <div class="pub-title">
+      Emotion-Aware Sign Language Recognition via Cross-Modal Fusion of ECG Signals and Skeletal Data
+      <span class="tag">Best Paper Award</span>
+    </div>
+    <div class="author">
+      <span class="highlight">Yongle Duanmu</span>, et al.
+    </div>
+    <div class="meta">
+      2026 5th International Conference on Electronics Technology and Artificial Intelligence (ETAI), 2026.
+    </div>
+  </div>
+
+  <div class="publication">
+    <div class="pub-title">
+      ECG-MFN: An Attention-Guided Multimodal Fusion Network for ECG-Based Emotion Recognition
+      <span class="tag">Under Review</span>
+    </div>
+    <div class="author">
+      <span class="highlight">Yongle Duanmu</span>, et al.
+    </div>
+    <div class="meta">
+      Submitted to <em>Biomedical Signal Processing and Control</em>.
+    </div>
+  </div>
+
+  <div class="publication">
+    <div class="pub-title">
+      Mechanism-Constrained Gas-Response Decomposition and Sensor-Array Optimization for Lithium Iron Phosphate Battery Vent-Gas Sensing
+      <span class="tag">Co-first Author</span>
+      <span class="tag">Under Review</span>
+    </div>
+    <div class="author">
+      Haotian Zhang, <span class="highlight">Yongle Duanmu</span>, et al.
+    </div>
+    <div class="meta">
+      Submitted to <em>Sensors and Actuators B: Chemical</em>.
+    </div>
+  </div>
+
+  <h2>Internship & Research Experience</h2>
+
+  <div class="experience">
+    <h3>Embedded Software Development Intern, Battery Thermal Runaway Project</h3>
+    <div class="meta">Academician Zhongwei Chen's Team &nbsp; | &nbsp; May 2026 - Aug. 2026</div>
+    <p>
+      Worked on an implantable multi-source data acquisition platform for early warning of
+      thermal runaway in new-energy vehicle batteries. The system monitored internal strain,
+      temperature, CO/CO₂/H₂/smoke, PM2.5, and other parameters in real time. I independently
+      designed a high-integration embedded PCB, completed schematic and layout design, and
+      verified signal integrity using oscilloscopes and multimeters. On the software side, I
+      developed a multi-task real-time acquisition system based on STM32F4 and FreeRTOS,
+      including drivers for SPI, IIC, CAN, USART, SD card storage, and multiple sensors.
+      To address the limited space inside batteries, I designed a tab-signal multiplexing scheme
+      that encoded and modulated sensing data onto battery tabs and recovered the information
+      through an external decoding circuit.
+    </p>
+  </div>
+
+  <div class="experience">
+    <h3>Embedded Software Development Intern, Xiaomi OpenVela Team</h3>
+    <div class="meta">Xiaomi &nbsp; | &nbsp; Sep. 2026 - Aug. 2027</div>
+    <p>
+      Upcoming internship. Details will be updated later.
+    </p>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Bidirectional Intelligent Bionic Sign Language Translator</h3>
+    <div class="meta">National First Prize, Embedded Chip and System Design Competition, 2024</div>
+    <p>
+      Designed a multimodal sign language translation system integrating embedded sensing,
+      gesture recognition, and intelligent interaction. I served as the team leader and was
+      responsible for system design, algorithm implementation, embedded development, and
+      project integration.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Intelligent Medication Intervention System Based on Multimodal AI and Edge Computing</h3>
+    <div class="meta">National First Prize, Chinese Collegiate Computing Competition, 2024</div>
+    <p>
+      Built an intelligent medication intervention system for elderly users and chronic disease
+      patients. The system integrates K230 edge vision recognition, i.MX6ULL edge interaction
+      gateway, PC-based local medical large language model, voice interaction, health monitoring,
+      medication behavior detection, and 3D-printed mechanical structure.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Dynamic Optimization of Insurance Enrollment under Extreme Weather</h3>
+    <div class="meta">Meritorious Winner, Mathematical Contest in Modeling, 2024</div>
+    <p>
+      Developed a mathematical modeling framework for analyzing and optimizing insurance
+      enrollment strategies under extreme weather conditions. I served as the team leader and
+      contributed to model construction, data analysis, and paper writing.
+    </p>
+  </div>
+
+  <h2>Education</h2>
+
+  <div class="education">
+    <h3>Dalian University of Technology</h3>
+    <div class="meta">M.S. in Control Science and Engineering &nbsp; | &nbsp; Sep. 2025 - Jun. 2028</div>
+  </div>
+
+  <div class="education">
+    <h3>Henan Polytechnic University</h3>
+    <div class="meta">B.Eng. in Automation, School of Electrical Engineering and Automation &nbsp; | &nbsp; Sep. 2021 - Jun. 2025</div>
+    <p>Ranked first in the major for four consecutive years.</p>
+  </div>
+
+  <h2>Competition Awards</h2>
+  <div class="awards">
+    <ul>
+      <li>
+        <strong>National First Prize</strong>, National Undergraduate Embedded Chip and System Design Competition, 2024.
+        Team Leader. Project: Bidirectional Intelligent Bionic Sign Language Translator.
+      </li>
+      <li>
+        <strong>National First Prize</strong>, Chinese Collegiate Computing Competition, 2024.
+        Team Leader. Project: Intelligent Medication Intervention System Based on Multimodal AI and Edge Computing.
+      </li>
+      <li>
+        <strong>Meritorious Winner</strong>, Mathematical Contest in Modeling, 2024.
+        Team Leader. Project: Dynamic Optimization of Insurance Enrollment under Extreme Weather.
+      </li>
+    </ul>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="two-col">
+      <div>
+        <h3>Embedded Systems</h3>
+        <ul>
+          <li>STM32, FreeRTOS, SPI, IIC, CAN, USART</li>
+          <li>Sensor drivers, real-time acquisition, SD card storage</li>
+          <li>PCB schematic design and layout</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>AI & Software</h3>
+        <ul>
+          <li>ECG-based emotion recognition</li>
+          <li>Multimodal learning and domain adaptation</li>
+          <li>Edge AI deployment and intelligent healthcare systems</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Yongle Duanmu. Last updated: June 2026.
+  </footer>
+
 </body>
 </html>
